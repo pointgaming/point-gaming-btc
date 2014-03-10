@@ -15,10 +15,15 @@
 # You should have received a copy of the GNU Affero General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+import logging
+
+_logger = logging.getLogger('authentication.allowall')
+
 class allowall:
         def __init__(self, **k):
                 pass
 
         def checkAuthentication(self, user, password):
+                _logger.info("Authenticated user %s", user)
                 return True
 
