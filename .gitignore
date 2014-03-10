@@ -2,7 +2,6 @@
 *.pyo
 *~
 *.bak
-config*.py
 jsonrpc
 *.patch
 .*.kate-swp
@@ -12,3 +11,4 @@ midstate.so
 *.rej
 eloipool.worklog
 bitcoinrpc
+share-logfile
